@@ -17,7 +17,7 @@ app.use(express.static('views'));
 app.use(morgan('dev'));
 
 //Database configuration
-mongoose.connect('');
+mongoose.connect('mongodb://stevenstabile:pagescraper@ds021663.mlab.com:21663/page_scraper_db');
 var db = mongoose.connection;
 
 
